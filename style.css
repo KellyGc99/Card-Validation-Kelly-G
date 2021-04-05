@@ -1,0 +1,70 @@
+/*fuente y estilo de letra*/
+body{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*fondo de pantalla*/
+#fondoTarjeta {
+background-image:url(Imagenes/FondoPantall3.PNG);
+background-size: cover;
+}
+#fondoTienda {
+background-image: url(Imagenes/pantallaObjetos.PNG);
+background-size: cover;
+}
+#fondoPaginaUno {
+background-image: url(Imagenes/FondoPantalla1.PNG);
+background-size: cover;
+}
+
+/*botones*/
+.boton {
+background-color: #EFB810;
+border: 3px solid #000000;
+height: 40px;
+width: 110px;
+font-family:'Lucida Sans';
+font-size: 15px;
+}
+#botonTienda {
+border-radius: 90px;
+}
+#botonUsuario {
+border-radius: 90px;
+}
+.imag {
+border-radius: 80px;
+height: auto; width: auto; max-width: 80px; max-height: 80px;
+}
+
+#botonCrearTarjeta{
+background-color: #EFB810;
+border: 3px solid #000000;
+height: 40px;
+width: 220px;
+font-family:'Lucida Sans';
+font-size: 15px;
+}
+
+/*posición botones*/
+#botonUsuario {
+margin: 110px 115px 0 880px;
+}
+#enviarCodigoDeTarjeta{
+margin: 800px 0 0 0;
+}
+
+/*texto*/
+h1 {
+margin: 150px 0 0 440px;
+}
+div {
+margin: 100px 0 0 300px;
+}
+
+/*tamaño del input*/
+input{
+height: 40px;
+width: 230px;
+border: 3px solid #000000;
+margin: 0 0 0 30px;
+}

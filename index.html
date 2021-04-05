@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Dofus tienda a crédito</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <section id="fondoPaginaUno">
+    <!--botones para iniciar sesión,ir a la tienda,boton crear tarjeta y titulo-->
+    <button id="botonUsuario"><img class="imag" src="Imagenes/usuario ini s.png"></button>
+    <button id="botonTienda"><img class="imag" src="Imagenes/tienda.PNG"></button>
+    <h1>Bienvenidos a la tienda de crédito Dofus </h1>
+    <div>
+      <button id="botonCrearTarjeta" class="boton">Crear Tarjeta de Crédito</button>
+      <label class="textTarj"><br>Click si aun no tienes una</label>
+    </div>
+  </section>
+  <section id="fondoTienda">
+    <!--boton tienda -->
+    <div class="dragopavo">
+      <h2>Dragopavo Real<br>30.000</h2>
+      <img id="imgDra" src="Imagenes/dra ral.PNG">
+      <button id="pagarDragopavo" class="boton">COMPRAR</button>
+    </div>
+    <div class="mulagua">
+      <h2>Mulagua Zómbicos<br>15.000</h2>
+      <img id="imgMul" src="Imagenes/mula zomm.PNG">
+      <button id="pagarMulagua" class="boton">COMPRAR</button>
+    </div>
+    <div class="actitud">
+      <h2>Actitud Rabioso <br>25.000</h2>
+
+      <img id="imgAct" src="Imagenes/rabios.PNG">
+      <button id="pagarActitud" class="boton">COMPRAR</button>
+    </div>
+  </section>
+  <section id="fondoTarjeta">
+    <!--comprar cifrado -->
+    <input type="number" id="numeroDeTarjeta" maxlength="19">
+    <button id="enviarCodigoDeTarjeta" class="boton">Confirmar</button>
+    <button id="botonParaRegresarATienda" class="boton">ATRÁS</button>
+  </section>
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>
