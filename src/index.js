@@ -44,31 +44,17 @@ document.getElementById('fondoTarjeta').style.display='none';
 document.getElementById('fondoPaginaUno').style.display='none';
 }
 
-/*mensaje sobre si el numero de tarjeta es correcto o no */
+//Maskify y isValid
 
-/*let valorDeLaTarjeta= document.getElementById('enviarCodigoDeTarjeta').value;
-valorDeLaTarjeta.addEventListener('click',mensajeSobreLaTarjeta);
-
-function mensajeSobreLaTarjeta(){
-    if(){
-        alert=("El número (maskify) es válido . Compra realizada con éxito");
-    }else if(){
-        alert=("No se puede verificar, faltan dígitos en tu tarjeta");
-    }else(){
-        alert=("El número de la tarjeta es invalido, pruebe ingresando otro");
-    }
-}*/
-
-/*Maskify*/
 const numeroTarjeta=document.getElementById("numeroDeTarjeta");
 const llamarBoton=document.getElementById("enviarCodigoDeTarjeta");
 llamarBoton.addEventListener('click',procesar);
 
 
 function procesar(){
-    //const valorEnmascarado=validator.maskifySinFor(numeroTarjeta.value);
     const valorEnmascarado=validator.maskify(numeroTarjeta.value);
-    alert(`El numero ${valorEnmascarado} es válido.`);
+    const validar=validator.isValid(numeroTarjeta.value);
+    validar?alert(`El numero ${valorEnmascarado} es válido.`): alert(`El numero ${valorEnmascarado} no es válido.`);
 }
-/*isValid*/
+
 
